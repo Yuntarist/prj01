@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>웹페이지 수동</title>
+    <script>
+      document.addEventListener("DOMContentLoaded",()=>{
+        const title =document.createElement('h1')
+        const div1 =document.createElement('div')
+        const div2 =document.createElement('div')
+        const div3 =document.createElement('div')
+        const div4 =document.createElement('div')
+
+        const button1 = document.createElement('button')
+        const button2 = document.createElement('button')
+        const button3 = document.createElement('button')
+        const button4 = document.createElement('button')
+        const button5 = document.createElement('button')
+        
+        button1.setAttribute('class','btn1')
+        button2.setAttribute('class','btn2')
+        button3.setAttribute('class','btn3')
+        button4.setAttribute('class','btn4')
+        button5.setAttribute('class','btn5')
+        
+        div1.setAttribute('class','c1')
+        div2.setAttribute('class','c2')
+        div3.setAttribute('class','c3')
+        div4.setAttribute('class','c4')
+
+        button1.textContent = 'about'
+        document.body.append(button1,button2,button3,button4,button5)
+        
+      
+      })
+    </script>
     <style>
       /* tab button */
       .tab {
@@ -45,11 +76,12 @@
       #Downloads {
         background-color: orange;
       }
+
     </style>
   </head>
 
   <body>
-    <div id="About" class="content">
+    <!-- <div id="About" class="content">
       <h1>About</h1>
       <p>Custom Software Development Company</p>
     </div>
@@ -78,6 +110,6 @@
     <button class="tab">Downloads</button>
 
     <script></script>
-  
+   -->
 
 </body></html>
