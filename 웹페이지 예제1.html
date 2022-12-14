@@ -6,9 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>웹페이지 수동</title>
     <style>
+        .tab{
+            background-color: rgb(73, 72, 72);
+            color: white;
+            float: left;
+            font-size: 25px;
+            border: none;
+            width: 20%;
+            padding: 14px 16px;    
+        }
+        .tab:hover{
+            background-color: gray;
+        }
     </style>
   </head>
   <body>
+    <h1></h1>
     <div id="About" class="content">
         <h1>About</h1>
         <p>Custom Software Development Company</p>
@@ -36,7 +49,20 @@
     <button class="tab">Etc</button>
 
     <script>
-        
+        document.addEventListener("DOMContentLoaded",()=>{
+            const title = document.querySelector('h1')
+
+            const div1 = document.querySelector('#About')
+            const div2 = document.querySelector('#Products')
+            const div3 = document.querySelector('#Technology')
+            const div4 = document.querySelector('#Downloads')
+            const div5 = document.querySelector('#Etc')
+
+            const btn = document.querySelector('.tab')
+            btn.addEventListener('click',(e)=>{
+                
+            })
+        })
     </script>
 </body>
 </html>
