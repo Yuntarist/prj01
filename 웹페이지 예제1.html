@@ -5,116 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>웹페이지 수동</title>
-    <script>
-      document.addEventListener("DOMContentLoaded",()=>{
-        const title = document.createElement('h1')
-        const div1 = document.createElement('div')
-        const div2 = document.createElement('div')
-        const div3 = document.createElement('div')
-        const div4 = document.createElement('div')
-
-        const button1 = document.createElement('button')
-        const button2 = document.createElement('button')
-        const button3 = document.createElement('button')
-        const button4 = document.createElement('button')
-        const button5 = document.createElement('button')
-        
-        button1.setAttribute('class','btn1')
-        button2.setAttribute('class','btn2')
-        button3.setAttribute('class','btn3')
-        button4.setAttribute('class','btn4')
-        button5.setAttribute('class','btn5')
-        
-        div1.setAttribute('class','c1')
-        div2.setAttribute('class','c2')
-        div3.setAttribute('class','c3')
-        div4.setAttribute('class','c4')
-
-        button1.textContent = 'About'
-        button2.textContent = 'Products'
-        button3.textContent = 'Technoligy'
-        button4.textContent = 'Downloads'
-        button5.textContent = 'Etc'
-
-        document.body.append(button1,button2,button3,button4,button5)
-        
-      
-      })
-    </script>
     <style>
-      /* tab button */
-      .tab {
-        background-color: #555;
-        color: white;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        font-size: 17px;
-        width: 25%;
-      }
-
-      /* change background color when mouse over */
-      .tab:hover {
-        background-color: #777;
-      }
-
-      /* default content */
-      .content {
-        color: white;
-        display: none;
-        padding: 50px;
-        text-align: center;
-      }
-
-      /* Style each tab content individually */
-      #About {
-        background-color: tomato;
-      }
-      #Products {
-        background-color: darkolivegreen;
-      }
-      #Technology {
-        background-color: dodgerblue;
-      }
-      #Downloads {
-        background-color: orange;
-      }
-
     </style>
   </head>
-
   <body>
-    <!-- <div id="About" class="content">
-      <h1>About</h1>
-      <p>Custom Software Development Company</p>
+    <div id="About" class="content">
+        <h1>About</h1>
+        <p>Custom Software Development Company</p>
     </div>
-
     <div id="Products" class="content">
-      <h1>Products</h1>
-      <p>
-        Building tailored software to address critical needs of global
-        enterprises.
-      </p>
+        <h1>Products</h1>
+        <p>Building tailored software to address critical needs of global enterprises.</p>
     </div>
-
     <div id="Technology" class="content">
-      <h1>Technology</h1>
-      <p>Machine Learning, Artificial Intelligent, Cloud Platform.</p>
+        <h1>Technology</h1>
+        <p>Machine Learning, Artificial Intelligent, Cloud Platform.</p>
     </div>
-
     <div id="Downloads" class="content">
-      <h1>Downloads</h1>
-      <p>You can download a free 10 days trial.</p>
+        <h1>Downloads</h1>
+        <p>You can download a free 10 days trial.</p>
     </div>
-
-    <button id="default" class="tab">About</button>
+    <div id="Etc" class="content">
+        <h1>Etc</h1>
+        <p>Everything is fine</p>
+    </div>
+    <button id="defalut" class="tab">About</button>
     <button class="tab">Products</button>
     <button class="tab">Technology</button>
     <button class="tab">Downloads</button>
+    <button class="tab">Etc</button>
 
-    <script></script>
-   -->
-
-</body></html>
+    <script>
+        
+    </script>
+</body>
+</html>
