@@ -60,26 +60,57 @@
         about.style.cssText = 'background-color:red'
 
         // 각 버튼 클릭시 텍스트 출력
+        // 색상 변경
         about.addEventListener('click',(e)=>{
             title.textContent = 'About'
             div1.append(p)
             p.textContent = 'Custom Software Development Company'
+            div1.style.cssText = 'background-color:red'
+            about.style.cssText = 'background-color:red'
+            technology.style.cssText = 'background-color:rgb 85 85 85'
+            downloads.style.cssText = 'background-color:rgb 85 85 85'
+            etc.style.cssText = 'background-color:rgb 85 85 85'
+            products.style.cssText = 'background-color:rgb 85 85 85'
         })
         products.addEventListener('click',(e)=>{
             title.textContent = 'Products'
             p.textContent ='Building tailored software to address critical needs of global enterprises.'
+            div1.style.cssText = 'background-color:green'
+            products.style.cssText = 'background-color:green'
+            about.style.cssText = 'background-color:rgb 85 85 85'
+            technology.style.cssText = 'background-color:rgb 85 85 85'
+            downloads.style.cssText = 'background-color:rgb 85 85 85'
+            etc.style.cssText = 'background-color:rgb 85 85 85'
         })
         technology.addEventListener('click',(e)=>{
             title.textContent = 'Technology'
             p.textContent = 'Machine Learning, Artificial Intelligent, Cloud Platform.'
+            div1.style.cssText = 'background-color:blue'
+            technology.style.cssText = 'background-color:blue'
+            about.style.cssText = 'background-color:rgb 85 85 85'
+            products.style.cssText = 'background-color:rgb 85 85 85'
+            downloads.style.cssText = 'background-color:rgb 85 85 85'
+            etc.style.cssText = 'background-color:rgb 85 85 85'
         })
         downloads.addEventListener('click',(e)=>{
             title.textContent = 'Downloads'
             p.textContent = 'You can download a free 10 days trial.'
+            div1.style.cssText = 'background-color:coral'
+            downloads.style.cssText = 'background-color:coral'
+            about.style.cssText = 'background-color:rgb 85 85 85'
+            products.style.cssText = 'background-color:rgb 85 85 85'
+            technology.style.cssText = 'background-color:rgb 85 85 85'
+            etc.style.cssText = 'background-color:rgb 85 85 85'
         })
         etc.addEventListener('click',(e)=>{
             title.textContent = 'Etc'
             p.textContent = 'Everything is fine'
+            div1.style.cssText = 'background-color:pink'
+            etc.style.cssText = 'background-color:pink'
+            about.style.cssText = 'background-color:rgb 85 85 85'
+            products.style.cssText = 'background-color:rgb 85 85 85'
+            downloads.style.cssText = 'background-color:rgb 85 85 85'
+            technology.style.cssText = 'background-color:rgb 85 85 85'
         })
       })
     </script>
@@ -96,37 +127,20 @@
             width: 20%;
             margin-top: -16px;
         }
-      
         .btn:hover {
             background-color: #777;
         }
-
         .title {
             color: black;
             padding: 50px;
             text-align: center;
         }
-
         .c1 {
             background-color: red;
         }
-      
-      /* #btn1 {
-        background-color: tomato;
-      }
-      #btn2 {
-        background-color: darkolivegreen;
-      }
-      #btn3 {
-        background-color: dodgerblue;
-      }
-      #btn4 {
-        background-color: orange;
-      }
-      #btn5 {
-        background-color: pink;
-      } */
-    
+        .title {
+          color: white;
+        }
     </style>
   </head>
   <body>
